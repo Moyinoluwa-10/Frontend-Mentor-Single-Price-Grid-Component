@@ -106,7 +106,15 @@ button {
     border-radius: 5px;
     margin-top: 8px;
     margin-bottom: 8px;
+    cursor: pointer;
 }
+
+button:hover {
+    background-color: white;
+    color: var(--Bright-Yellow);
+    border: 2px solid var(--Bright-Yellow);
+}
+
 
 /* Styling Section Three */
 #section3 {
