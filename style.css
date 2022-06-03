@@ -21,14 +21,12 @@ body{
     font-family: 'Karla', sans-serif;
     font-size: 16px;
     background-color: var(--Light-Gray);
-    padding: 0 390px;
+    padding: 0 350px;
     margin: 90px auto;
 }
 
 #container {
     display: grid;
-    /* grid-template-areas: 'section1 section1'
-    'section2 section3'; */
 }
 
 /* Styling Section One */
@@ -36,7 +34,6 @@ body{
     background-color: white;
     grid-column: 1 / span 2;
     grid-row: 1;
-    /* grid-area: section1; */
     padding: 20px 30px;
     border-radius: 7px 7px 0 0;
 }
@@ -64,7 +61,6 @@ body{
     background-color: var(--Cyan);
     grid-column: 1 / span 1;
     grid-row: 2;
-    /* grid-area: section2; */
     padding: 20px 0px 20px 30px;
     border-radius: 0 0 0 7px;
 }
@@ -115,7 +111,6 @@ button:hover {
     border: 2px solid var(--Bright-Yellow);
 }
 
-
 /* Styling Section Three */
 #section3 {
     background-color: var(--Cyan-1);
@@ -138,11 +133,46 @@ button:hover {
     line-height: 20px;
 }
 
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 50px;
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
 /* Responsiveness */
-@media screen and (max-width:500px) {
+@media screen and (min-width:1200px) and (max-width:1300px) {
+    body {
+        padding: 0 300px;
+    }
+}
+
+@media screen and (min-width:940px) and (max-width:1200px) {
+    body {
+        padding: 0 200px;
+    }
+}
+
+@media screen and (min-width:680px) and (max-width:940px) {
+    body {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:680px) {
+    body {
+        padding: 0 10px;
+}
+}
+
+@media screen and (min-width:500px) and (max-width:600px) {
     /* Styling Page */
     body {
-        padding: 0px 40px;
+        padding: 0px 70px;
         margin: 70px auto;
     }
 
@@ -177,4 +207,46 @@ button:hover {
         grid-row: 3;
         border-radius: 0 0 7px 7px;
     }
+
+}
+
+@media screen and (max-width:500px) {
+    /* Styling Page */
+    body {
+        padding: 0px 30px;
+        margin: 70px auto;
+    }
+
+    /* Styling Section Onw */
+    #section1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #section1 br {
+        display: none;
+    }
+
+    #section1 #top {
+        font-size: 20px;
+    }
+
+    #section1 #middle {
+        font-size: 16px;
+    }
+
+    /* Styling Section two */
+    #section2 {
+        grid-column: 1;
+        grid-row: 2;
+        border-radius: 0;
+    }
+
+    /* Styling Section Three */
+    #section3 {
+        grid-column: 1;
+        grid-row: 3;
+        border-radius: 0 0 7px 7px;
+    }
+
 }
