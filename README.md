@@ -1,1 +1,1 @@
-# Project_10
+# Frontend Mentor | Single Price Grid Component solution
